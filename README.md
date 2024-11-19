@@ -43,6 +43,3 @@ When changing the parameters or endpoints of the API, please update the swagger 
         options.UseSqlServer(
             Configuration.GetConnectionString("DefaultConnection"),
             x => x.MigrationsAssembly("WebApplication1.Migrations")));
-   Overview <self>
-   basics/install
-   basics/quickstarthttp://www.dotnetfoundation.org/code-of-conduct
