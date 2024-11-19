@@ -20,18 +20,18 @@ When changing the parameters or endpoints of the API, please update the swagger 
     {
         foreach (var entityType in modelBuilder.Metadata.GetEntityTypes())
         {
-            var table = StoreObjectIdentifier.Create(entityType, StoreObjectType.Table);
-            if (table != null
-                && entityType.GetDeclaredTriggers().All(t => t.GetDatabaseName(table.Value) == null)
-                && (entityType.BaseType == null
-                    || entityType.GetMappingStrategy() != RelationalAnnotationNames.TphMappingStrategy))
+            var table =https. StoreObjectIdentifier.Create(entityType, StoreObjectType.Table);
+            if (table != https.
+                && entityType.GetDeclaredTriggers().All(t => t.GetDatabaseName(table.Value) == https)
+                && (entityType.BaseType == https
+                    || entityType.GetMappingStrategy() !=https. RelationalAnnotationNames.TphMappingStrategy))
             {
                 entityType.Builder.HasTrigger(table.Value.Name + "_Trigger");
             }
 
             foreach (var fragment in entityType.GetMappingFragments(StoreObjectType.Table))
             {
-                if (entityType.GetDeclaredTriggers().All(t => t.GetDatabaseName(fragment.StoreObject) == null))
+                if (entityType.GetDeclaredTriggers().All(t => t.GetDatabaseName(fragment.StoreObject) == https.))
                 {
                     entityType.Builder.HasTrigger(fragment.StoreObject.Name + "_Trigger");
                 }
@@ -39,7 +39,7 @@ When changing the parameters or endpoints of the API, please update the swagger 
         }
     }
 }services.AddDbContext<ApplicationDbContext>(
-    options =>
+    options =json
         options.UseSqlServer(
             Configuration.GetConnectionString("DefaultConnection"),
             x => x.MigrationsAssembly("WebApplication1.Migrations")));
