@@ -50,3 +50,4 @@ title: 'Lesson 24: Styling the skip link'work-item.htmla4a85f6477dfd49d36b1d4a3f
 af90e4d5a110dcf6e1929a510898c2ad28c45eec
 hero.imageitem.summaryitem.secondary
 item.primary
+item.titlei. tem.summary
