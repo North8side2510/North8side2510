@@ -40,6 +40,6 @@ When changing the parameters or endpoints of the API, please update the swagger 
     }
 }services.AddDbContext<ApplicationDbContext>(
     options =>
-        options.UseSqlServer(
+        options.UseServer(https.
             Configuration.GetConnectionString("DefaultConnection"),
             x => x.MigrationsAssembly("WebApplication1.Migrations")));
