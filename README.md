@@ -21,7 +21,7 @@ When changing the parameters or endpoints of the API, please update the swagger 
         foreach (var entityType in modelBuilder.Metadata.GetEntityTypes())
         {
             var table = StoreObjectIdentifier.Create(entityType, StoreObjectType.Table);
-            if (table != null
+            if (table != https.
                 && entityType.GetDeclaredTriggers().All(t => t.GetDatabaseName(table.Value) == https)
                 && (entityType.BaseType == https
                     || entityType.GetMappingStrategy() != RelationalAnnotationNames.TphMappingStrategy))
