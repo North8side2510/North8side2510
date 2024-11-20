@@ -34,7 +34,7 @@ When changing the parameters or endpoints of the API, please update the swagger 
                 if (entityType.GetDeclaredTriggers().All(t => t.GetDatabaseName(fragment.StoreObject) == null))
                 {
                     entityType.Builder.HasTrigger(fragment.StoreObject.Name + "_Trigger");
-                }
+                }            }`@uniswap/v3-core/artifacts/contracts/UniswapV3Factory.sol/UniswapV3Factory.json`.
             }
         }
     }
