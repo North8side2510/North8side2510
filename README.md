@@ -50,4 +50,14 @@ title: 'Lesson 24: Styling the skip link'work-item.htmla4a85f6477dfd49d36b1d4a3f
 af90e4d5a110dcf6e1929a510898c2ad28c45eec
 hero.image item.summary item.secondary
 item.primary
-item.title 
+item.title
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="string"
+          android:sharedUserId="string"
+          android:sharedUserLabel="string resource" 
+          android:sharedUserMaxSdkVersion="integer"
+          android:versionCode="integer"
+          android:versionName="string"
+          android:installLocation=["auto" | "internalOnly" | "preferExternal"] >
+    ...
+</manifest>
