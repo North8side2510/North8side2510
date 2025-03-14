@@ -1,4 +1,4 @@
-I'mecho "# 256root" >> README.md
+I'mI'mecho "# 256root" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
@@ -72,4 +72,10 @@ sonar.language=java
 
 # Encoding of the source files
 sonar.sourceEncoding=UTF-8
-</manifest>qqq
+</manifest>
+it('can Create a Star', async() => {
+    let tokenId = 1;
+    let instance = await StarNotary.deployed();
+    await instance.createStar('Awesome Star!', tokenId, {from: accounts[0]})
+    assert.equal(await instance.tokenIdToStarInfo.call(tokenId), 'Awesome Star!')
+});f5f5dc
